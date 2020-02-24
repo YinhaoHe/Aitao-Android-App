@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/id_btn_storeinfor_back"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/id_tv_storeinfor_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/store_infor"
+            android:textColor="#333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/id_btn_storeinfor_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:text="@string/confirm"
+            android:textColor="@color/colorTheme"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ddd" />
+    <com.mingle.widget.LoadingView
+        app:loadingText="网络连接中..."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_load_storeinfor"
+    />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/id_tv_storeinfor_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/head"
+                    android:textColor="#707070"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/id_img_storeinfor_head"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/id_tv_storeinfor_head"
+                    android:src="@drawable/img_defaultavatar" />
+                <ImageView
+                    android:id="@+id/id_btn_storeinfor_edithead"
+                    android:src="@drawable/icon_mystore_modify"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="17dp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ddd" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/id_tv_storeinfor_name_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/store_name"
+                    android:textColor="#707070"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/id_tv_storeinfor_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@+id/id_tv_storeinfor_name_static"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="这是一个很牛逼的店名" />
+                <ImageView
+                    android:id="@+id/id_btn_storeinfor_editname"
+                    android:src="@drawable/icon_mystore_modify"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="20dp"
+                    android:layout_height="17dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/id_tv_storeinfor_introduction_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/store_introduction"
+                    android:textColor="#707070"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:hint="输入店铺简介"
+                    android:textColorHint="#707070"
+                    android:gravity="top|left"
+                    android:id="@+id/id_et_storeinfor_introduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:textColor="#333"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:gravity="top|left"
+                android:id="@+id/id_tv_storeinfor_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="#ffffff"
+                android:ellipsize="end"
+                android:padding="16dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:id="@+id/id_tv_storeinfor_information_static"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/store_information"
+                    android:textColor="#707070"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#ddd" />
+            <LinearLayout
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/id_et_storeinfor_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="158dp"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:hint="输入店铺的有效信息"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="#333"
+                    android:textColorHint="#707070"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/id_tv_storeinfor_information"
+                android:layout_width="match_parent"
+                android:layout_height="158dp"
+                android:background="#ffffff"
+                android:ellipsize="end"
+                android:gravity="left|top"
+                android:padding="16dp"
+                android:textColor="#333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
