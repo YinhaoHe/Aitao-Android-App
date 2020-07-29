@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Aitao Android App
 
 ## [apk file](https://github.com/YinhaoHe/Aitao-Android-App/blob/master/app/app-release.apk)
