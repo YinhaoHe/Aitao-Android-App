@@ -1,4 +1,4 @@
-# Aitao Android App
+# Aitao online shopping Android app
 
 ## [apk file](https://github.com/YinhaoHe/Aitao-Android-App/blob/master/app/app-release.apk)
 
@@ -17,6 +17,4 @@
 ## Forget password
 
 ![forgetPasswordPage](./images/forgetPasswordPage.jpeg)
-=======
-# Aitao online shopping Android app
->>>>>>> 7b0ae9e2b864a4d0d924736c3d00067f19cf9719
+
